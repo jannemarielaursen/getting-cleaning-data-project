@@ -52,8 +52,8 @@ features <- rbind(X.test[, mean.std.indices], X.train[, mean.std.indices])
 merged <- cbind(subjects, activity, features)
 
 # Setting the column names of the merged dataset
-colnames(merged) <- c("Subject", "Activity", feature.labels[mean.std.indices, 2])
 
+colnames(merged) <- c("Subject", "Activity", feature.labels[mean.std.indices, 2])
 
 # Creating a dataframe with the average of each variable
 
