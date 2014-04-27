@@ -64,11 +64,5 @@ avg.melted <- dcast(melted.merged, Subject + Activity ~ ..., mean)
 # Writing out the tidy dataset (tab-separated)
 
 write.table(avg.melted, file='./tidy_data.txt', sep="\t", row.names=FALSE, 
-            col.names=TRUE, dec=6)
-
-
-head(melted.merged)
-
-
-
+            col.names=TRUE)
 
